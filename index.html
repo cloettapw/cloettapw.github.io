@@ -169,13 +169,33 @@
 <script>
 	document.addEventListener('contextmenu', event => event.preventDefault());
 
-$(document).keydown(function(event){
-    if(event.keyCode==123){
-    return false;
-   }
-else if(event.ctrlKey && event.shiftKey && event.keyCode==73){        
-      return false;
-   }
+$(window).on('keydown',function(event)
+    {
+    if(event.keyCode==123)
+    {
+        alert('gtfo my code');
+        return false;
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+    {
+        alert('gtfo my code')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.keyCode==73)
+    {
+        alert('gtfo my code')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.keyCode==85)
+    {
+        alert('gtfo my code')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.keyCode==67)
+    {
+        alert('gtfo my code')
+        return false;  //Prevent from ctrl+shift+i
+    }
 });
 </script>
         <title>cloetta.pw</title>
