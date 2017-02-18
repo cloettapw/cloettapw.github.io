@@ -159,6 +159,13 @@
 
 <!DOCTYPE html>
     <head>
+<audio autoplay loop id="player">
+		<source src="music.mp3" type="audio/mp3" />
+		<script>
+			var audio = document.currentScript.parentElement;
+			audio.volume = 0.3;
+		</script>
+		</audio>
 <script>
 	document.addEventListener('contextmenu', event => event.preventDefault());
 
